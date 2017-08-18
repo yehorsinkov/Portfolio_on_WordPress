@@ -1,0 +1,148 @@
+@import "../bourbon/bourbon"
+$color: #FF6347 //Theme skin
+$text_color: #888
+$main_color: #222
+$bg_light: #d4d4d4
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+a
+	color: $color
+
+p
+	color: $text_color
+
+body .main_footer
+.s_about li
+	color: $color
+
+
+	
+.color_element
+	color: $color
+.color_bg 
+	background-color: $color
+.color_border
+	border-color: $color
+
+.bg_white
+	background-color: #FFF
+.bg_light
+	background-color: $bg_light
+
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+	a
+		color: #fff
+
+.logo_container
+	float: left
+
+svg
+	height: 80px
+	width: 80px
+	z-index: 100
+	position: relative
+	path
+		fill: $main_color
+
+.toggle_menu
+	background-color: $main_color
+
+.top_menu
+	a:hover
+		color: $color
+		background-color: rgba(255,255,255,.07)
+	+kerning(7)
+	
+.top_text
+h1
+	color: #fff	
+	+kerning(7)
+p
+	color: #fff
+	+kerning(3)
+
+h2
+	+kerning(6)
+.s_descr
+	+kerning(8)
+	&::after
+		background-color: #222	
+
+.section_content
+	h2
+		color: $text_color
+		+kerning(4)
+	h3
+		color: $text_color
+		+kerning(4)
+	li,
+	p
+		color: $text_color
+		+kerning(2)
+.about_right
+	a
+		+kerning(2)
+
+.s_about
+	p:nth-child(even)
+		color: $color
+.s_standart
+	.section_content
+		.text_left, .text_right
+			color: $color
+			+kerning(3)
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(3)
+	li.active
+		color: #fff
+		border-bottom: 1px solid $color
+	.popup_content
+		color: $color
+	.podrt_descr
+		p,
+		h3
+			color: $color
+		.button
+			color: $color
+
+.contact_box
+	.contant_icon
+		color: $color
+	h3
+		color: $main_color
+	p,
+	a
+		color: $text_color
+form
+	input:focus,
+	textarea:focus
+		border: 1px solid $color
+	input,
+	textarea
+		+kerning(2)
+	button
+		background-color: $color
+		+kerning(2)
+	.form-group
+		+kerning(2)
+		color: $text_color
+
+
+.main_footer
+	+kerning(0)
+	color: $color
+	a
+		color: $color
+		+kerning(4)
+	
